@@ -52,6 +52,12 @@ class CountWebComponent extends HTMLElement {
         this.countElement.innerHTML = this.counter;
     }
 
+    /**
+     * Method to track attribite changed values
+     * @param {*} name 
+     * @param {*} oldValue 
+     * @param {*} newValue 
+     */
     attributeChangedCallback(name, oldValue, newValue) {
         console.log(`calling from attributeChangedCallback with ${name} having oldvalues as ${oldValue} with new value ${newValue}`);
     }

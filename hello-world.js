@@ -3,6 +3,9 @@ class HelloWorld extends HTMLElement {
         super();
     }
 
+    /**
+     * connected callback
+     */
     connectedCallback() {
         this.innerHTML = `<p>Hello World</p> <p>${this.getAttribute('name')}</p>`;
         console.log("This is example");
